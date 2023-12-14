@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+ {
+    int a,rev,rem1,rem2,sum,b,d,t;
+    printf("Enter a:",a);
+    scanf("%d",&a);
+    sum=0;
+    rev=0;
+    b=a;
+    while(a>0)
+    {
+        rem1=a%10;
+        sum=sum+rem1;
+        a=a/10;
+    }
+    d=sum;
+    while(d>0)
+    {
+        rem2=d%10;
+        rev=(rev*10)+rem2;
+        d=d/10;
+    }
+        t=rev*sum;
+        if(t==b){
+            printf("Magic Number");
+        }
+        else 
+            printf("Not magic number");
+    
+    return 0;
+ } 
